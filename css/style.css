@@ -19,15 +19,7 @@ body{
     padding: 16px 5vw;
 }
 /*header*/
-/*
-    .header__menu__lista{
-        display: flex;
-        justify-content: space-between;
-        gap:15px;
-        list-style-type: none;
-        font-weight: 300;
-        color: var(--color-terciario);
-}*/
+
 
 .header{
     display: flex;
@@ -79,9 +71,6 @@ justify-content: space-between;
     align-items: center;
     margin-bottom: 32px;
 }
-.titulo__contenedor{
-
-}
 
 .presentacion__titulo{
     font-size: 52px;
@@ -118,50 +107,38 @@ justify-content: space-between;
 }
 /*habilidades*/
 .habilidades{
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 26px;
 }
 .presentacion__habilidades{
+    text-align: center;
     font-size: 32px;
     margin-bottom: 32px;
     color: var(--color-terciario);
 }
-.img__habilidades{
-    list-style-type: none;
-    align-content: flex-start;   
+
+.habiliades__line{
+   display:flex;
+   justify-content: space-around;
+
 }
-/*.img__habilidades img{
-    display: flex;
-    align-items: flex-start;
-}*/
+
 .nombre__habilidades {
-    list-style-type: none;
     font-weight: bold;
-    margin-top: .5rem;
     color: var(--color-primario);
     
 }
- .habiliades__line{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /*gap: 16px;*/
-    width: 100%;
- }
  .habilidades__caja{
-    position: relative;
     width: 15%;
     height: 10rem;
     background-color: #f6f6f6;
     padding: 16px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
  }
- .habilidades__caja ul{
-    position: absolute;
-    bottom: 16px;   
- }
+ 
+
  /*Formacion*/
  .formacion{
     padding: 2rem;
@@ -181,13 +158,7 @@ justify-content: space-between;
     width: 100%;
     
  }
- .formacion__cursos__caja{
-  /* background-color: #f6f6f6;
-   padding: 2rem;
-   position: relative;
-    width: 15%;
-    height: 10rem;*/
- }
+ 
  .formacion__cursos__caja{
     width: 33%;
  }
@@ -223,15 +194,11 @@ justify-content: space-between;
    
  }
  /*experiencia*/
- .experiencia{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
- }
+ 
 
  .presentacion__experiencia{
-    text-align: center; 
+    align-items: center;
+    text-align: center;
     font-weight: 700;
     font-size: 32px;
     color: var(--color-terciario);
@@ -348,13 +315,7 @@ justify-content: space-between;
     color: var(--color-primario);
     opacity: 0;
 }
-.incorrecto .validar-estado{
-    opacity: 1;
-}
-.correcto .validar-estado{
-    opacity: 1;
-    color: var(--color-terciario)
-}
+
 .contacto__textarea{
     resize: none;
 }
@@ -374,6 +335,7 @@ justify-content: space-between;
     color:var(--color-hover);
     background-color: var(--color-primario);
 }
+/*footer*/
 .footer{
     padding: 2rem;
     text-align: center;
@@ -408,6 +370,7 @@ justify-content: space-between;
         font-size: 1rem;
     } 
     /*habilidades*/
+    
     .habiliades__line {
         justify-content: center;
     }
@@ -453,13 +416,7 @@ justify-content: space-between;
         padding: 1rem 1rem;
     }
     
-    /*
-    .menu__header img {
-        height: 1.2rem;
-    }
-    .header__logo {
-        height: 1.2rem;
-    }*/
+
     .header__menu__link__contacto a {
         font-weight: 500;
         font-size: .6rem; 
@@ -479,15 +436,16 @@ justify-content: space-between;
          align-items: flex-start;
         }
         /*habilidades*/
-        .habiliades__line {
-            gap: 16px;
+        .habiliades__line{
+            flex-wrap: wrap;
         }
-    
-        .habilidades__caja {
-            width: 40%;
-            margin: 0;
-            padding: .5rem;
-        }
+        
+    .habilidades__caja {
+        width:25%;
+        height: 6rem;
+        margin: 1rem;
+    }
+      
            /*formacion*/
         .formacion__cursos{
             flex-direction: column;
